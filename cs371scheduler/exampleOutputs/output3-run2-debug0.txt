@@ -1,0 +1,50 @@
+OS Scheduling Simulation
+
+Filename to read parameters: params3.txt
+Input file: params3.txt
+File comment: # 20% I/O-bound, 1 sec per proc, 2 sec btwn proc, small quantum, really quick I/O
+File parameters:
+  Total simulation time: 50000s
+  Quantum: 20000 us
+  Context switch time: 100 us
+  Average total CPU time per process: 1.000000 s
+  Average time between new processes: 2.000000 s
+  Percentage of I/O-bound processes: 20%
+  Average I/O service time: 1000 us
+
+
+Print debugging info --
+  (0) none
+  (1) N/F events
+  (2) all events
+  (3) all events and queues
+Debug level: 0
+
+OVERALL
+Simulation time: 50000.000000 seconds
+Created 25070 processes
+Average CPU time      1.004 seconds
+CPU utilization:                       49.31% (24657.145 seconds)
+Total time in context switches:      490.807200 seconds
+
+TOTAL number of proc. completed:       24797
+Ratio of I/O-bound completed:               19.9%
+Average CPU time:                       0.994 seconds
+Average ready waiting time:             1.055 seconds
+Average turnaround time:                2.246 seconds
+
+Number of I/O-BOUND proc. completed:    4937
+Average CPU time:                       0.979 seconds
+Average ready waiting time:             2.247 seconds
+Average I/O service time:               0.642 seconds
+Average turnaround time:                3.936 seconds
+Average I/O interrupts/proc.:           674.9
+
+Number of CPU-BOUND proc. completed:   19860
+Average CPU time:                       0.998 seconds
+Average ready waiting time:             0.758 seconds
+Average I/O service time:               0.063 seconds
+Average turnaround time:                1.826 seconds
+Average I/O interrupts/proc.:            66.3
+
+End of simulation.

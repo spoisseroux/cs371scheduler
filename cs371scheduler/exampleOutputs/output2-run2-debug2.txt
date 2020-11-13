@@ -1,0 +1,69 @@
+OS Scheduling Simulation
+
+Filename to read parameters: params2.txt
+Input file: params2.txt
+File comment: # One process, CPU-bound, no quantum interrupts, avg 4 CPU bursts
+File parameters:
+  Total simulation time: 10s
+  Quantum: 50000 us
+  Context switch time: 20 us
+  Average total CPU time per process: 0.050000 s
+  Average time between new processes: 100.000000 s
+  Percentage of I/O-bound processes: 0%
+  Average I/O service time: 5000 us
+
+
+Print debugging info --
+  (0) none
+  (1) N/F events
+  (2) all events
+  (3) all events and queues
+Debug level: 2
+Time   0.000000 Event 'New Process': pid=0 totalCPU=0.083 CPU-bound; next New at 240.187000
+Time   0.000000 Event 'Ready -> CPU' pid=0 currentBurst=0.010700 totalCPURem=0.072500
+Time   0.010720 Event 'I/O Interrupt': pid=0 svctime=0.005300
+Time   0.016020 Event 'I/O Completed': pid=0
+Time   0.016020 Event 'Ready -> CPU' pid=0 currentBurst=0.015900 totalCPURem=0.056600
+Time   0.031940 Event 'I/O Interrupt': pid=0 svctime=0.000200
+Time   0.032140 Event 'I/O Completed': pid=0
+Time   0.032140 Event 'Ready -> CPU' pid=0 currentBurst=0.013400 totalCPURem=0.043200
+Time   0.045560 Event 'I/O Interrupt': pid=0 svctime=0.012200
+Time   0.057760 Event 'I/O Completed': pid=0
+Time   0.057760 Event 'Ready -> CPU' pid=0 currentBurst=0.017500 totalCPURem=0.025700
+Time   0.075280 Event 'I/O Interrupt': pid=0 svctime=0.004400
+Time   0.079680 Event 'I/O Completed': pid=0
+Time   0.079680 Event 'Ready -> CPU' pid=0 currentBurst=0.018400 totalCPURem=0.007300
+Time   0.098100 Event 'I/O Interrupt': pid=0 svctime=0.002000
+Time   0.100100 Event 'I/O Completed': pid=0
+Time   0.100100 Event 'Ready -> CPU' pid=0 currentBurst=0.014100 totalCPURem=0.000000
+Time   0.107420 Event 'Process Finished': pid=0 CPU-bound totalCPU=0.083 waitready=0.000 inI/O=0.024
+Time 240.187000 Event 'New Process': pid=1 totalCPU=0.046 CPU-bound; next New at 355.498100
+
+OVERALL
+Simulation time: 10.000000 seconds
+Created 2 processes
+Average CPU time      0.064 seconds
+CPU utilization:                        0.83% (0.083 seconds)
+Total time in context switches:        0.000120 seconds
+
+TOTAL number of proc. completed:           1
+Ratio of I/O-bound completed:                0.0%
+Average CPU time:                       0.083 seconds
+Average ready waiting time:             0.000 seconds
+Average turnaround time:                0.107 seconds
+
+Number of I/O-BOUND proc. completed:       0
+Average CPU time:                       0.000 seconds
+Average ready waiting time:             0.000 seconds
+Average I/O service time:               0.000 seconds
+Average turnaround time:                0.000 seconds
+Average I/O interrupts/proc.:             0.0
+
+Number of CPU-BOUND proc. completed:       1
+Average CPU time:                       0.083 seconds
+Average ready waiting time:             0.000 seconds
+Average I/O service time:               0.024 seconds
+Average turnaround time:                0.107 seconds
+Average I/O interrupts/proc.:             5.0
+
+End of simulation.

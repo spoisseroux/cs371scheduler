@@ -1,0 +1,201 @@
+OS Scheduling Simulation
+
+Filename to read parameters: params1.txt
+Input file: params1.txt
+File comment: # 50% CPU-bound, 1 sec per proc, 1.5 sec btwn new proc
+File parameters:
+  Total simulation time: 100s
+  Quantum: 10000 us
+  Context switch time: 50 us
+  Average total CPU time per process: 1.000000 s
+  Average time between new processes: 1.500000 s
+  Percentage of I/O-bound processes: 50%
+  Average I/O service time: 20000 us
+
+
+Print debugging info --
+  (0) none
+  (1) N/F events
+  (2) all events
+  (3) all events and queues
+Debug level: 1
+Time   0.000000 Event 'New Process': pid=0 totalCPU=1.600 I/O-bound; next New at   0.368600
+Time   0.368600 Event 'New Process': pid=1 totalCPU=1.024 CPU-bound; next New at   0.842600
+Time   0.842600 Event 'New Process': pid=2 totalCPU=0.513 CPU-bound; next New at   3.654400
+Time   2.238750 Event 'Process Finished': pid=2 CPU-bound totalCPU=0.513 waitready=0.264 inI/O=0.616
+Time   3.115100 Event 'Process Finished': pid=1 CPU-bound totalCPU=1.024 waitready=0.265 inI/O=1.451
+Time   3.654400 Event 'New Process': pid=3 totalCPU=0.656 CPU-bound; next New at   5.983400
+Time   5.151950 Event 'Process Finished': pid=3 CPU-bound totalCPU=0.656 waitready=0.027 inI/O=0.810
+Time   5.983400 Event 'New Process': pid=4 totalCPU=1.115 CPU-bound; next New at   6.197100
+Time   6.197100 Event 'New Process': pid=5 totalCPU=0.265 I/O-bound; next New at   9.991000
+Time   8.587050 Event 'Process Finished': pid=4 CPU-bound totalCPU=1.115 waitready=0.109 inI/O=1.372
+Time   9.991000 Event 'New Process': pid=6 totalCPU=1.665 I/O-bound; next New at  11.075500
+Time  10.298200 Event 'Process Finished': pid=5 I/O-bound totalCPU=0.265 waitready=0.287 inI/O=3.540
+Time  11.075500 Event 'New Process': pid=7 totalCPU=0.388 I/O-bound; next New at  11.510300
+Time  11.510300 Event 'New Process': pid=8 totalCPU=2.307 CPU-bound; next New at  11.974300
+Time  11.974300 Event 'New Process': pid=9 totalCPU=2.178 CPU-bound; next New at  12.434300
+Time  12.434300 Event 'New Process': pid=10 totalCPU=0.968 I/O-bound; next New at  13.691600
+Time  13.691600 Event 'New Process': pid=11 totalCPU=0.190 CPU-bound; next New at  14.192600
+Time  14.192600 Event 'New Process': pid=12 totalCPU=0.259 CPU-bound; next New at  16.092000
+Time  14.413200 Event 'Process Finished': pid=11 CPU-bound totalCPU=0.190 waitready=0.257 inI/O=0.273
+Time  15.436700 Event 'Process Finished': pid=12 CPU-bound totalCPU=0.259 waitready=0.462 inI/O=0.521
+Time  16.092000 Event 'New Process': pid=13 totalCPU=0.441 CPU-bound; next New at  16.653300
+Time  16.653300 Event 'New Process': pid=14 totalCPU=0.760 CPU-bound; next New at  17.571200
+Time  17.571200 Event 'New Process': pid=15 totalCPU=0.331 CPU-bound; next New at  18.352000
+Time  18.300950 Event 'Process Finished': pid=13 CPU-bound totalCPU=0.441 waitready=1.110 inI/O=0.654
+Time  18.352000 Event 'New Process': pid=16 totalCPU=0.224 CPU-bound; next New at  18.698800
+Time  18.698800 Event 'New Process': pid=17 totalCPU=0.218 I/O-bound; next New at  19.540100
+Time  19.540100 Event 'New Process': pid=18 totalCPU=0.061 I/O-bound; next New at  20.658800
+Time  19.640850 Event 'Process Finished': pid=15 CPU-bound totalCPU=0.331 waitready=1.202 inI/O=0.535
+Time  19.798800 Event 'Process Finished': pid=16 CPU-bound totalCPU=0.224 waitready=0.831 inI/O=0.390
+Time  20.164400 Event 'Process Finished': pid=14 CPU-bound totalCPU=0.760 waitready=2.001 inI/O=0.745
+Time  20.192550 Event 'Process Finished': pid=7 I/O-bound totalCPU=0.388 waitready=3.289 inI/O=5.426
+Time  20.236650 Event 'Process Finished': pid=8 CPU-bound totalCPU=2.307 waitready=3.466 inI/O=2.938
+Time  20.614400 Event 'Process Finished': pid=9 CPU-bound totalCPU=2.178 waitready=3.332 inI/O=3.116
+Time  20.658800 Event 'New Process': pid=19 totalCPU=0.483 I/O-bound; next New at  24.795800
+Time  20.933200 Event 'Process Finished': pid=18 I/O-bound totalCPU=0.061 waitready=0.326 inI/O=1.005
+Time  23.153850 Event 'Process Finished': pid=17 I/O-bound totalCPU=0.218 waitready=0.822 inI/O=3.408
+Time  24.795800 Event 'New Process': pid=20 totalCPU=0.630 CPU-bound; next New at  26.821400
+Time  26.454450 Event 'Process Finished': pid=20 CPU-bound totalCPU=0.630 waitready=0.109 inI/O=0.915
+Time  26.821400 Event 'New Process': pid=21 totalCPU=0.754 CPU-bound; next New at  28.868100
+Time  28.414600 Event 'Process Finished': pid=19 I/O-bound totalCPU=0.483 waitready=0.347 inI/O=6.909
+Time  28.868100 Event 'New Process': pid=22 totalCPU=0.416 CPU-bound; next New at  29.095600
+Time  29.035500 Event 'Process Finished': pid=21 CPU-bound totalCPU=0.754 waitready=0.135 inI/O=1.319
+Time  29.095600 Event 'New Process': pid=23 totalCPU=0.056 I/O-bound; next New at  29.709900
+Time  29.204000 Event 'Process Finished': pid=0 I/O-bound totalCPU=1.600 waitready=4.689 inI/O=22.860
+Time  29.709900 Event 'New Process': pid=24 totalCPU=0.389 I/O-bound; next New at  33.403800
+Time  29.882150 Event 'Process Finished': pid=22 CPU-bound totalCPU=0.416 waitready=0.076 inI/O=0.519
+Time  30.123800 Event 'Process Finished': pid=23 I/O-bound totalCPU=0.056 waitready=0.060 inI/O=0.910
+Time  30.433700 Event 'Process Finished': pid=10 I/O-bound totalCPU=0.968 waitready=3.669 inI/O=13.329
+Time  33.403800 Event 'New Process': pid=25 totalCPU=1.946 CPU-bound; next New at  33.745200
+Time  33.745200 Event 'New Process': pid=26 totalCPU=0.215 I/O-bound; next New at  34.412000
+Time  34.412000 Event 'New Process': pid=27 totalCPU=0.417 CPU-bound; next New at  36.375500
+Time  35.758500 Event 'Process Finished': pid=27 CPU-bound totalCPU=0.417 waitready=0.276 inI/O=0.651
+Time  36.193550 Event 'Process Finished': pid=24 I/O-bound totalCPU=0.389 waitready=0.419 inI/O=5.663
+Time  36.375500 Event 'New Process': pid=28 totalCPU=0.292 CPU-bound; next New at  37.084700
+Time  37.084700 Event 'New Process': pid=29 totalCPU=1.208 CPU-bound; next New at  37.522900
+Time  37.360700 Event 'Process Finished': pid=28 CPU-bound totalCPU=0.292 waitready=0.218 inI/O=0.473
+Time  37.522900 Event 'New Process': pid=30 totalCPU=0.581 I/O-bound; next New at  40.554800
+Time  37.859100 Event 'Process Finished': pid=26 I/O-bound totalCPU=0.215 waitready=0.734 inI/O=3.158
+Time  38.215900 Event 'Process Finished': pid=6 I/O-bound totalCPU=1.665 waitready=5.079 inI/O=21.424
+Time  38.601650 Event 'Process Finished': pid=25 CPU-bound totalCPU=1.946 waitready=0.795 inI/O=2.444
+Time  40.413400 Event 'Process Finished': pid=29 CPU-bound totalCPU=1.208 waitready=0.359 inI/O=1.753
+Time  40.554800 Event 'New Process': pid=31 totalCPU=1.055 I/O-bound; next New at  44.229500
+Time  44.229500 Event 'New Process': pid=32 totalCPU=2.151 CPU-bound; next New at  44.379500
+Time  44.379500 Event 'New Process': pid=33 totalCPU=2.015 I/O-bound; next New at  45.851400
+Time  45.851400 Event 'New Process': pid=34 totalCPU=1.186 I/O-bound; next New at  46.685300
+Time  46.158500 Event 'Process Finished': pid=30 I/O-bound totalCPU=0.581 waitready=0.561 inI/O=7.474
+Time  46.685300 Event 'New Process': pid=35 totalCPU=4.067 I/O-bound; next New at  47.498600
+Time  47.498600 Event 'New Process': pid=36 totalCPU=2.232 CPU-bound; next New at  48.101700
+Time  48.101700 Event 'New Process': pid=37 totalCPU=1.032 I/O-bound; next New at  48.760700
+Time  48.760700 Event 'New Process': pid=38 totalCPU=1.002 CPU-bound; next New at  52.332900
+Time  50.124100 Event 'Process Finished': pid=32 CPU-bound totalCPU=2.151 waitready=1.027 inI/O=2.703
+Time  51.886100 Event 'Process Finished': pid=38 CPU-bound totalCPU=1.002 waitready=1.049 inI/O=1.068
+Time  52.332900 Event 'New Process': pid=39 totalCPU=0.105 I/O-bound; next New at  53.274900
+Time  53.274900 Event 'New Process': pid=40 totalCPU=0.510 I/O-bound; next New at  55.938800
+Time  53.851450 Event 'Process Finished': pid=39 I/O-bound totalCPU=0.105 waitready=0.263 inI/O=1.147
+Time  54.744200 Event 'Process Finished': pid=36 CPU-bound totalCPU=2.232 waitready=1.586 inI/O=3.412
+Time  55.938800 Event 'New Process': pid=41 totalCPU=2.476 I/O-bound; next New at  56.315000
+Time  56.315000 Event 'New Process': pid=42 totalCPU=0.328 CPU-bound; next New at  56.380100
+Time  56.380100 Event 'New Process': pid=43 totalCPU=1.854 CPU-bound; next New at  62.380400
+Time  57.363150 Event 'Process Finished': pid=42 CPU-bound totalCPU=0.328 waitready=0.351 inI/O=0.367
+Time  58.852700 Event 'Process Finished': pid=31 I/O-bound totalCPU=1.055 waitready=2.594 inI/O=14.612
+Time  62.020150 Event 'Process Finished': pid=43 CPU-bound totalCPU=1.854 waitready=0.742 inI/O=3.031
+Time  62.247650 Event 'Process Finished': pid=40 I/O-bound totalCPU=0.510 waitready=1.130 inI/O=7.315
+Time  62.380400 Event 'New Process': pid=44 totalCPU=1.358 I/O-bound; next New at  64.230600
+Time  64.230600 Event 'New Process': pid=45 totalCPU=0.259 CPU-bound; next New at  64.417600
+Time  64.417600 Event 'New Process': pid=46 totalCPU=2.110 CPU-bound; next New at  65.770300
+Time  65.020550 Event 'Process Finished': pid=45 CPU-bound totalCPU=0.259 waitready=0.176 inI/O=0.353
+Time  65.770300 Event 'New Process': pid=47 totalCPU=0.044 CPU-bound; next New at  67.096000
+Time  65.859550 Event 'Process Finished': pid=47 CPU-bound totalCPU=0.044 waitready=0.040 inI/O=0.005
+Time  66.106000 Event 'Process Finished': pid=37 I/O-bound totalCPU=1.032 waitready=2.991 inI/O=13.945
+Time  66.903600 Event 'Process Finished': pid=34 I/O-bound totalCPU=1.186 waitready=3.222 inI/O=16.604
+Time  67.096000 Event 'New Process': pid=48 totalCPU=0.439 I/O-bound; next New at  67.358900
+Time  67.358900 Event 'New Process': pid=49 totalCPU=0.281 CPU-bound; next New at  68.584700
+Time  68.134300 Event 'Process Finished': pid=49 CPU-bound totalCPU=0.281 waitready=0.211 inI/O=0.282
+Time  68.584700 Event 'New Process': pid=50 totalCPU=1.787 I/O-bound; next New at  68.927000
+Time  68.927000 Event 'New Process': pid=51 totalCPU=0.438 I/O-bound; next New at  68.986900
+Time  68.986900 Event 'New Process': pid=52 totalCPU=0.843 I/O-bound; next New at  69.566500
+Time  69.566500 Event 'New Process': pid=53 totalCPU=0.080 I/O-bound; next New at  71.683100
+Time  70.070100 Event 'Process Finished': pid=46 CPU-bound totalCPU=2.110 waitready=0.951 inI/O=2.577
+Time  70.968350 Event 'Process Finished': pid=53 I/O-bound totalCPU=0.080 waitready=0.127 inI/O=1.192
+Time  71.683100 Event 'New Process': pid=54 totalCPU=1.216 CPU-bound; next New at  73.447200
+Time  73.447200 Event 'New Process': pid=55 totalCPU=0.071 I/O-bound; next New at  75.380500
+Time  74.504950 Event 'Process Finished': pid=48 I/O-bound totalCPU=0.439 waitready=1.142 inI/O=5.813
+Time  74.758400 Event 'Process Finished': pid=55 I/O-bound totalCPU=0.071 waitready=0.267 inI/O=0.970
+Time  75.002600 Event 'Process Finished': pid=54 CPU-bound totalCPU=1.216 waitready=0.502 inI/O=1.594
+Time  75.380500 Event 'New Process': pid=56 totalCPU=0.590 CPU-bound; next New at  75.853400
+Time  75.853400 Event 'New Process': pid=57 totalCPU=0.417 CPU-bound; next New at  76.282100
+Time  76.127300 Event 'Process Finished': pid=51 I/O-bound totalCPU=0.438 waitready=1.041 inI/O=5.707
+Time  76.282100 Event 'New Process': pid=58 totalCPU=0.240 I/O-bound; next New at  76.376200
+Time  76.376200 Event 'New Process': pid=59 totalCPU=1.222 CPU-bound; next New at  77.536000
+Time  77.213650 Event 'Process Finished': pid=56 CPU-bound totalCPU=0.590 waitready=0.623 inI/O=0.616
+Time  77.343250 Event 'Process Finished': pid=57 CPU-bound totalCPU=0.417 waitready=0.649 inI/O=0.421
+Time  77.536000 Event 'New Process': pid=60 totalCPU=0.327 CPU-bound; next New at  77.647300
+Time  77.647300 Event 'New Process': pid=61 totalCPU=4.066 CPU-bound; next New at  79.386500
+Time  78.910650 Event 'Process Finished': pid=60 CPU-bound totalCPU=0.327 waitready=0.632 inI/O=0.413
+Time  79.386500 Event 'New Process': pid=62 totalCPU=0.578 CPU-bound; next New at  80.753100
+Time  80.614250 Event 'Process Finished': pid=33 I/O-bound totalCPU=2.015 waitready=6.686 inI/O=27.465
+Time  80.753100 Event 'New Process': pid=63 totalCPU=1.307 I/O-bound; next New at  82.111500
+Time  81.399600 Event 'Process Finished': pid=59 CPU-bound totalCPU=1.222 waitready=2.138 inI/O=1.656
+Time  81.783850 Event 'Process Finished': pid=62 CPU-bound totalCPU=0.578 waitready=0.959 inI/O=0.857
+Time  82.076550 Event 'Process Finished': pid=58 I/O-bound totalCPU=0.240 waitready=2.222 inI/O=3.324
+Time  82.111500 Event 'New Process': pid=64 totalCPU=0.331 CPU-bound; next New at  82.691100
+Time  82.691100 Event 'New Process': pid=65 totalCPU=0.516 I/O-bound; next New at  83.041000
+Time  83.041000 Event 'New Process': pid=66 totalCPU=1.391 CPU-bound; next New at  83.438000
+Time  83.203000 Event 'Process Finished': pid=64 CPU-bound totalCPU=0.331 waitready=0.339 inI/O=0.419
+Time  83.438000 Event 'New Process': pid=67 totalCPU=0.084 CPU-bound; next New at  84.553400
+Time  83.816150 Event 'Process Finished': pid=67 CPU-bound totalCPU=0.084 waitready=0.201 inI/O=0.093
+Time  84.553400 Event 'New Process': pid=68 totalCPU=0.911 CPU-bound; next New at  85.878500
+Time  85.878500 Event 'New Process': pid=69 totalCPU=3.038 CPU-bound; next New at  86.727900
+Time  86.727900 Event 'New Process': pid=70 totalCPU=3.191 I/O-bound; next New at  88.161400
+Time  87.842850 Event 'Process Finished': pid=52 I/O-bound totalCPU=0.843 waitready=5.351 inI/O=12.634
+Time  88.161400 Event 'New Process': pid=71 totalCPU=0.001 CPU-bound; next New at  89.639500
+Time  88.183650 Event 'Process Finished': pid=71 CPU-bound totalCPU=0.001 waitready=0.022 inI/O=0.000
+Time  89.078950 Event 'Process Finished': pid=66 CPU-bound totalCPU=1.391 waitready=3.097 inI/O=1.541
+Time  89.207350 Event 'Process Finished': pid=68 CPU-bound totalCPU=0.911 waitready=2.535 inI/O=1.202
+Time  89.639500 Event 'New Process': pid=72 totalCPU=1.063 I/O-bound; next New at  89.688400
+Time  89.688400 Event 'New Process': pid=73 totalCPU=1.521 I/O-bound; next New at  91.003100
+Time  90.335350 Event 'Process Finished': pid=44 I/O-bound totalCPU=1.358 waitready=7.874 inI/O=18.676
+Time  91.003100 Event 'New Process': pid=74 totalCPU=0.199 I/O-bound; next New at  92.271300
+Time  92.271300 Event 'New Process': pid=75 totalCPU=1.063 CPU-bound; next New at  94.402400
+Time  94.402400 Event 'New Process': pid=76 totalCPU=0.911 CPU-bound; next New at  94.451300
+Time  94.451300 Event 'New Process': pid=77 totalCPU=1.335 I/O-bound; next New at  94.939900
+Time  94.939900 Event 'New Process': pid=78 totalCPU=0.264 CPU-bound; next New at  98.135600
+Time  95.227350 Event 'Process Finished': pid=61 CPU-bound totalCPU=4.066 waitready=7.497 inI/O=5.990
+Time  96.328250 Event 'Process Finished': pid=65 I/O-bound totalCPU=0.516 waitready=5.908 inI/O=7.195
+Time  96.350500 Event 'Process Finished': pid=78 CPU-bound totalCPU=0.264 waitready=0.872 inI/O=0.273
+Time  96.395600 Event 'Process Finished': pid=74 I/O-bound totalCPU=0.199 waitready=2.548 inI/O=2.639
+Time  97.343450 Event 'Process Finished': pid=75 CPU-bound totalCPU=1.063 waitready=2.700 inI/O=1.303
+Time  98.135600 Event 'New Process': pid=79 totalCPU=3.400 CPU-bound; next New at 104.228700
+Time  98.717750 Event 'Process Finished': pid=76 CPU-bound totalCPU=0.911 waitready=2.232 inI/O=1.167
+Time  99.228300 Event 'Process Finished': pid=69 CPU-bound totalCPU=3.038 waitready=6.227 inI/O=4.065
+
+OVERALL
+Simulation time: 100.000000 seconds
+Created 80 processes
+Average CPU time      0.993 seconds
+CPU utilization:                       59.31% (59.308 seconds)
+Total time in context switches:        1.168050 seconds
+
+TOTAL number of proc. completed:          71
+Ratio of I/O-bound completed:               38.0%
+Average CPU time:                       0.835 seconds
+Average ready waiting time:             1.638 seconds
+Average turnaround time:                6.588 seconds
+
+Number of I/O-BOUND proc. completed:      27
+Average CPU time:                       0.629 seconds
+Average ready waiting time:             2.357 seconds
+Average I/O service time:               8.679 seconds
+Average turnaround time:               11.687 seconds
+Average I/O interrupts/proc.:           432.4
+
+Number of CPU-BOUND proc. completed:      44
+Average CPU time:                       0.962 seconds
+Average ready waiting time:             1.197 seconds
+Average I/O service time:               1.293 seconds
+Average turnaround time:                3.458 seconds
+Average I/O interrupts/proc.:            63.2
+
+End of simulation.

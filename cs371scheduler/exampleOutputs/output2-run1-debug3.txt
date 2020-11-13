@@ -1,0 +1,204 @@
+OS Scheduling Simulation
+
+Filename to read parameters: params2.txt
+Input file: params2.txt
+File comment: # One process, CPU-bound, no quantum interrupts, avg 4 CPU bursts
+File parameters:
+  Total simulation time: 10s
+  Quantum: 50000 us
+  Context switch time: 20 us
+  Average total CPU time per process: 0.050000 s
+  Average time between new processes: 100.000000 s
+  Percentage of I/O-bound processes: 0%
+  Average I/O service time: 5000 us
+
+
+Print debugging info --
+  (0) none
+  (1) N/F events
+  (2) all events
+  (3) all events and queues
+Debug level: 3
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 1/999 (N:0.000)
+
+Time   0.000000 Event 'New Process': pid=0 totalCPU=0.090 CPU-bound; next New at 107.941800
+'READY' 1/999 (0:0.000)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.000) (N:107.942)
+
+Time   0.000000 Event 'Ready -> CPU' pid=0 currentBurst=0.013000 totalCPURem=0.076900
+'READY' 0/999
+'CPU' 1/1 (0:0.013)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (I:0.013) (N:107.942)
+
+Time   0.013020 Event 'I/O Interrupt': pid=0 svctime=0.004200
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 1/999 (0:0.017)
+'events' 2/999 (O:0.017) (N:107.942)
+
+Time   0.017220 Event 'I/O Completed': pid=0
+'READY' 1/999 (0:0.017)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.017) (N:107.942)
+
+Time   0.017220 Event 'Ready -> CPU' pid=0 currentBurst=0.010700 totalCPURem=0.066200
+'READY' 0/999
+'CPU' 1/1 (0:0.028)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (I:0.028) (N:107.942)
+
+Time   0.027940 Event 'I/O Interrupt': pid=0 svctime=0.005400
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 1/999 (0:0.033)
+'events' 2/999 (O:0.033) (N:107.942)
+
+Time   0.033340 Event 'I/O Completed': pid=0
+'READY' 1/999 (0:0.033)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.033) (N:107.942)
+
+Time   0.033340 Event 'Ready -> CPU' pid=0 currentBurst=0.016000 totalCPURem=0.050200
+'READY' 0/999
+'CPU' 1/1 (0:0.049)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (I:0.049) (N:107.942)
+
+Time   0.049360 Event 'I/O Interrupt': pid=0 svctime=0.009100
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 1/999 (0:0.058)
+'events' 2/999 (O:0.058) (N:107.942)
+
+Time   0.058460 Event 'I/O Completed': pid=0
+'READY' 1/999 (0:0.058)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.058) (N:107.942)
+
+Time   0.058460 Event 'Ready -> CPU' pid=0 currentBurst=0.014100 totalCPURem=0.036100
+'READY' 0/999
+'CPU' 1/1 (0:0.073)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (I:0.073) (N:107.942)
+
+Time   0.072580 Event 'I/O Interrupt': pid=0 svctime=0.003600
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 1/999 (0:0.076)
+'events' 2/999 (O:0.076) (N:107.942)
+
+Time   0.076180 Event 'I/O Completed': pid=0
+'READY' 1/999 (0:0.076)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.076) (N:107.942)
+
+Time   0.076180 Event 'Ready -> CPU' pid=0 currentBurst=0.015200 totalCPURem=0.020900
+'READY' 0/999
+'CPU' 1/1 (0:0.091)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (I:0.091) (N:107.942)
+
+Time   0.091400 Event 'I/O Interrupt': pid=0 svctime=0.000700
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 1/999 (0:0.092)
+'events' 2/999 (O:0.092) (N:107.942)
+
+Time   0.092100 Event 'I/O Completed': pid=0
+'READY' 1/999 (0:0.092)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.092) (N:107.942)
+
+Time   0.092100 Event 'Ready -> CPU' pid=0 currentBurst=0.012300 totalCPURem=0.008600
+'READY' 0/999
+'CPU' 1/1 (0:0.104)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (I:0.104) (N:107.942)
+
+Time   0.104420 Event 'I/O Interrupt': pid=0 svctime=0.007600
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 1/999 (0:0.112)
+'events' 2/999 (O:0.112) (N:107.942)
+
+Time   0.112020 Event 'I/O Completed': pid=0
+'READY' 1/999 (0:0.112)
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (R:0.112) (N:107.942)
+
+Time   0.112020 Event 'Ready -> CPU' pid=0 currentBurst=0.016600 totalCPURem=0.000000
+'READY' 0/999
+'CPU' 1/1 (0:0.121)
+'' 0/0
+'I/O' 0/999
+'events' 2/999 (F:0.121) (N:107.942)
+
+Time   0.120640 Event 'Process Finished': pid=0 CPU-bound totalCPU=0.090 waitready=0.000 inI/O=0.031
+'READY' 0/999
+'CPU' 0/1
+'' 0/0
+'I/O' 0/999
+'events' 1/999 (N:107.942)
+
+Time 107.941800 Event 'New Process': pid=1 totalCPU=0.032 CPU-bound; next New at 208.852700
+
+OVERALL
+Simulation time: 10.000000 seconds
+Created 2 processes
+Average CPU time      0.061 seconds
+CPU utilization:                        0.90% (0.090 seconds)
+Total time in context switches:        0.000140 seconds
+
+TOTAL number of proc. completed:           1
+Ratio of I/O-bound completed:                0.0%
+Average CPU time:                       0.090 seconds
+Average ready waiting time:             0.000 seconds
+Average turnaround time:                0.121 seconds
+
+Number of I/O-BOUND proc. completed:       0
+Average CPU time:                       0.000 seconds
+Average ready waiting time:             0.000 seconds
+Average I/O service time:               0.000 seconds
+Average turnaround time:                0.000 seconds
+Average I/O interrupts/proc.:             0.0
+
+Number of CPU-BOUND proc. completed:       1
+Average CPU time:                       0.090 seconds
+Average ready waiting time:             0.000 seconds
+Average I/O service time:               0.031 seconds
+Average turnaround time:                0.121 seconds
+Average I/O interrupts/proc.:             6.0
+
+End of simulation.
